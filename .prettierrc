@@ -1,4 +1,27 @@
 {
-  "singleQuote": true,
-  "trailingComma": "all"
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "printWidth": 150,
+  "bracketSpacing": true,
+  "arrowParens": "always",
+  "endOfLine": "auto",
+  "importOrder": [
+  "^@nestjs/(.*)$",
+  "<THIRD_PARTY_MODULES>",
+  "^@/modules/(.*)$",
+  "^@/services/(.*)$",
+  "^@/controllers/(.*)$",
+  "^@/repositories/(.*)$",
+  "^@/middlewares/(.*)$",
+  "^@/utils/(.*)$",
+  "^@/constants/(.*)$",
+  "^[./]"
+  ],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true,
+  "plugins": [
+    "@trivago/prettier-plugin-sort-imports"
+  ]
 }
